@@ -3,19 +3,25 @@ import { Button } from '@chakra-ui/button';
 import Link from 'next/link';
 const Navigation = () => {
   return (
-    <Flex py="4" px="96" backgroundColor="blue.400" align="center">
+    <Flex py="4" px="32" backgroundColor="blue.400" align="center">
       <Box></Box>
       <Spacer />
       <Box>
-        <Button colorScheme="gray" mr="6">
-          <Link href="/">Home</Link>
-        </Button>
-        <Button colorScheme="gray" mr="6">
-          <Link href="/projects">Projects</Link>
-        </Button>
-        <Button colorScheme="gray">
-          <Link href="/contact">Contact</Link>
-        </Button>
+        <Link href="/" passHref>
+          <Button colorScheme="gray" mr="6">
+            Home
+          </Button>
+        </Link>
+
+        <Link href="/projects" passHref>
+          <Button colorScheme="gray" mr="6">
+            Projects
+          </Button>
+        </Link>
+
+        <Link href="/contact" passHref>
+          <Button colorScheme="gray">Contact</Button>
+        </Link>
       </Box>
     </Flex>
   );
