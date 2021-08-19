@@ -3,24 +3,41 @@ import { Button } from '@chakra-ui/button';
 import Link from 'next/link';
 const Navigation = () => {
   return (
-    <Flex py="4" px="32" backgroundColor="blue.400" align="center">
+    <Flex py="4" px="32" backgroundColor="brand.primary" align="center">
       <Box></Box>
       <Spacer />
       <Box>
         <Link href="/" passHref>
-          <Button colorScheme="gray" mr="6">
+          <Button
+            mr="6"
+            backgroundColor="transparent"
+            color="brand.baseText"
+            _hover={{ bg: 'rgba(255, 255, 255, 0.1)' }}
+          >
             Home
           </Button>
         </Link>
 
         <Link href="/projects" passHref>
-          <Button colorScheme="gray" mr="6">
+          <Button
+            mr="6"
+            backgroundColor="transparent"
+            color="brand.baseText"
+            _hover={{ bg: 'rgba(255, 255, 255, 0.1)' }}
+          >
             Projects
           </Button>
         </Link>
 
         <Link href="/contact" passHref>
-          <Button colorScheme="gray">Contact</Button>
+          <Button
+            mr="6"
+            backgroundColor="transparent"
+            color="brand.baseText"
+            _hover={{ bg: 'rgba(255, 255, 255, 0.1)' }}
+          >
+            Contact
+          </Button>
         </Link>
       </Box>
     </Flex>

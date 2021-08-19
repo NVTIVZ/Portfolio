@@ -11,6 +11,7 @@ const Introduction = () => {
     'ChakraUI',
     'Firebase',
     'TypeScript',
+    'NextJS',
   ];
 
   const renderStack = () => {
@@ -19,11 +20,11 @@ const Introduction = () => {
         <Box d="flex" alignItems="center" key={tech} mx="2">
           <Image
             src={`/images/${tech}-original.svg`}
-            width={8}
-            height={8}
+            width={7}
+            height={7}
             alt="react-icon"
           />
-          <Text fontSize="m" ml="1">
+          <Text fontSize="m" ml="1" fontWeight="semibold">
             {tech}
           </Text>
         </Box>
@@ -34,29 +35,31 @@ const Introduction = () => {
   return (
     <>
       {}
-      <Stack mt="32" direction="row" spacing={16}>
-        <Box mt="8">
-          <Heading fontSize="3xl" mb="-6">
+      <Stack mt="24" direction="row" spacing={32} mx="auto">
+        <Box mt="8" my="auto">
+          <Heading fontSize="3xl" mb="-6" fontWeight="bold">
             Hello, my name is
           </Heading>
-          <Text fontSize="7xl" color="blue.400">
+          <Text fontSize="7xl" color="brand.text" fontWeight="bold">
             Andrzej Glowica
           </Text>
-          <Text fontSize="2xl" mt="-3">
+          <Text fontSize="2xl" mt="-3" fontWeight="semibold">
             Lorem ipsum dolor sit, amet consectetur
           </Text>
         </Box>
-
-        <Image src="/images/coding.svg" width={400} alt="coding" />
+        <Box>
+          <Image src="/images/coding.svg" width={450} alt="coding" />
+        </Box>
       </Stack>
       <Box
-        backgroundColor="blue.100"
+        backgroundColor="brand.third"
         mt="16"
         w="550px"
         borderRadius="md"
         boxShadow="lg"
+        mx="auto"
       >
-        <Box d="flex" justifyContent="center">
+        <Box d="flex" justifyContent="center" mt="2">
           <Heading fontSize="xl">Tech Stack</Heading>
         </Box>
         <Grid templateColumns="repeat(4,1fr)" my="3">

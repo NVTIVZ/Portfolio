@@ -1,13 +1,16 @@
 // eslint-disable-next-line import/no-anonymous-default-export
-export default {
+import { extendTheme } from '@chakra-ui/react';
+
+const Theme = extendTheme({
   colors: {
-    transparent: 'transparent',
-    black: '#000',
-    white: '#fff',
-    blue: {
-      50: '#EBF8FF',
-      400: '#4299E1',
-      200: '#90CDF4',
+    brand: {
+      primary: '#082032',
+      secondary: '#2C394B',
+      third: '#334756',
+      text: '#FF4C29',
+      baseText: '#EEEEEE',
     },
   },
-};
+});
+
+export default Theme;
