@@ -34,11 +34,11 @@ const ProjectsArea = () => {
         <GridItem
           flexDirection="column"
           key={project.name}
-          mx="6"
+          mr="6"
           my="6"
           backgroundColor="brand.third"
           borderRadius="lg"
-          rowSpan={2}
+          rowSpan={[1, 2]}
           colSpan={1}
         >
           <Box>
@@ -69,12 +69,11 @@ const ProjectsArea = () => {
 
   return (
     <Grid
-      templateColumns="repeat(2,1fr)"
-      templateRows="repeat(4,1fr)"
-      mx="16"
+      templateColumns={{ base: 'repeat(1,1fr)', md: 'repeat(2,1fr)' }}
+      templateRows={{ base: 'repeat(4,1fr)', md: 'repeat(4,1fr)' }}
       mt="16"
     >
-      <GridItem mx="6" rowSpan={1} colSpan={1}>
+      <GridItem rowSpan={1} colSpan={1}>
         <Heading fontSize="5xl">All Creative Works.</Heading>
         <Text mt="3" fontSize="lg">
           {"Here's"} some of my projects that I have worked on.
