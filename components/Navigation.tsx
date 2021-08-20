@@ -8,7 +8,7 @@ const Navigation = () => {
     <Slide
       direction="top"
       in={true}
-      transition={{ enter: { duration: 0.7, delay: 0.01 } }}
+      transition={{ enter: { duration: 0.8, delay: 0.05 } }}
     >
       <Flex
         as="nav"

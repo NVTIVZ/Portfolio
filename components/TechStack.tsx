@@ -16,7 +16,7 @@ const TechStack = () => {
   const renderStack = () => {
     return techstack.map((tech) => {
       return (
-        <Box d="flex" alignItems="center" key={tech} mx="2">
+        <Box d="flex" alignItems="center" key={tech} mx="2" my="0.5">
           <Image
             src={`/images/${tech}-original.svg`}
             width={7}
@@ -41,7 +41,7 @@ const TechStack = () => {
       mx="auto"
     >
       <Box d="flex" justifyContent="center" mt="2">
-        <Heading fontSize="xl">Tech Stack</Heading>
+        <Heading fontSize="2xl">Tech Stack</Heading>
       </Box>
       <Grid
         templateColumns={{ base: 'repeat(3,1fr)', md: 'repeat(4,1fr)' }}

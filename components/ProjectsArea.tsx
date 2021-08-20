@@ -2,6 +2,7 @@ import { Box, Grid, Flex, GridItem } from '@chakra-ui/layout';
 import { Heading, Text, Image } from '@chakra-ui/react';
 import Link from 'next/link';
 import React from 'react';
+import buttonDeterminer from '../utils/buttonDeterminer';
 
 const ProjectsArea = () => {
   const projects = [
@@ -40,6 +41,7 @@ const ProjectsArea = () => {
           borderRadius="lg"
           rowSpan={[1, 2]}
           colSpan={1}
+          boxShadow="lg"
         >
           <Box>
             <Image src={project.imgURL} alt="project" borderTopRadius="lg" />
@@ -47,19 +49,16 @@ const ProjectsArea = () => {
           <Box ml="4">
             <Heading color="brand.text">{project.name}</Heading>
           </Box>
-          <Flex ml="4" flexDirection="row">
-            {project.stack.map((stack) => (
-              <Text
-                backgroundColor="cornflowerblue"
-                borderRadius="md"
-                key={stack}
-                mr="1"
-              >
-                {stack}
-              </Text>
-            ))}
+          <Flex ml="4" flexDirection="row" mt="1">
+            {project.stack.map((stack) => buttonDeterminer(stack))}
           </Flex>
-          <Box ml="4" my="2">
+          <Box
+            mx="4"
+            my="2"
+            pt="1"
+            borderTop="1px"
+            borderColor="rgba(255,255,255,0.5)"
+          >
             <Text fontWeight="semibold">{project.description}</Text>
           </Box>
         </GridItem>

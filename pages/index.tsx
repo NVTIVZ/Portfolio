@@ -1,5 +1,6 @@
 import type { NextPage } from 'next';
 import React from 'react';
+import Contact from '../components/Contact';
 import Introduction from '../components/Introduction';
 import ProjectsArea from '../components/ProjectsArea';
 import TechStack from '../components/TechStack';
@@ -10,6 +11,7 @@ const Home: NextPage = () => {
       <Introduction />
       <TechStack />
       <ProjectsArea />
+      <Contact />
     </>
   );
 };

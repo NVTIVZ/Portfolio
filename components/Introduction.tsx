@@ -13,14 +13,14 @@ import React from 'react';
 const Introduction = () => {
   return (
     <>
-      <Box mt={[8, 16, 48]}>
-        <Heading fontSize="5xl" mb="-6" fontWeight="bold">
+      <Box mt={[24, 32, 48]}>
+        <Heading fontSize={['3xl', '5xl']} mb="-6" fontWeight="bold">
           Hello, my name is
         </Heading>
-        <Text fontSize="9xl" color="brand.text" fontWeight="bold">
+        <Text fontSize={['5xl', '9xl']} color="brand.text" fontWeight="bold">
           Andrzej Glowica
         </Text>
-        <Text fontSize="4xl" mt="-3" fontWeight="semibold">
+        <Text fontSize={['2xl', '4xl']} mt="-3" fontWeight="semibold">
           Lorem ipsum dolor sit, amet consectetur
         </Text>
         <Box d="flex" mt="2" zIndex="1">
