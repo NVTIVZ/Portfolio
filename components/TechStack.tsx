@@ -19,8 +19,8 @@ const TechStack = () => {
         <Box d="flex" alignItems="center" key={tech} mx="2" my="0.5">
           <Image
             src={`/images/${tech}-original.svg`}
-            width={7}
-            height={7}
+            width={[5, 7]}
+            height={[5, 7]}
             alt="react-icon"
           />
           <Text fontSize="m" ml="1" fontWeight="semibold">
@@ -32,7 +32,7 @@ const TechStack = () => {
   };
 
   return (
-    <Fade in={true} transition={{ enter: { duration: 1.5, delay: 1 } }}>
+    <Fade in={true} transition={{ enter: { duration: 1, delay: 0.5 } }}>
       <Box
         backgroundColor="brand.third"
         mt="16"

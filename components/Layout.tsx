@@ -1,6 +1,7 @@
 import { Flex } from '@chakra-ui/react';
 import Head from 'next/head';
 import React from 'react';
+import Footer from './Footer';
 import Navigation from './Navigation';
 
 const Layout = (props: any) => {
@@ -18,9 +19,11 @@ const Layout = (props: any) => {
         flexDirection="column"
         backgroundColor="theming.secondary"
         px={[4, 12, 24, 48]}
+        minH="100vh"
       >
         {props.children}
       </Flex>
+      <Footer />
     </>
   );
 };
