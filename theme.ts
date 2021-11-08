@@ -4,10 +4,10 @@ import { extendTheme } from '@chakra-ui/react';
 const Theme = extendTheme({
   colors: {
     brand: {
-      primary: '#082032',
-      secondary: '#2C394B',
-      third: '#334756',
-      text: '#FF4C29',
+      primary: '#393E46',
+      secondary: '#393E46',
+      third: '#393E46',
+      text: '#FFD369',
       baseText: '#EEEEEE',
     },
   },

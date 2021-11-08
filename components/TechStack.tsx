@@ -1,8 +1,9 @@
-import { Box, Heading, Grid, Image, Text, Fade } from '@chakra-ui/react';
+import { Box, Heading, Grid, Image, Text, Fade, Flex } from '@chakra-ui/react';
 import React from 'react';
 
 const TechStack = () => {
   const techstack = [
+    'TypeScript',
     'React',
     'Redux',
     'HTML5',
@@ -10,46 +11,43 @@ const TechStack = () => {
     'Styled-Components',
     'ChakraUI',
     'Firebase',
-    'TypeScript',
+
     'NextJS',
+    'NodeJS',
+    'Express',
+    'MongoDB',
   ];
   const renderStack = () => {
     return techstack.map((tech) => {
       return (
-        <Box d="flex" alignItems="center" key={tech} mx="2" my="0.5">
-          <Image
-            src={`/images/${tech}-original.svg`}
-            width={[5, 7]}
-            height={[5, 7]}
-            alt="react-icon"
-          />
-          <Text fontSize="m" ml="1" fontWeight="semibold">
-            {tech}
-          </Text>
-        </Box>
+        <Image
+          src={`/images/${tech}-original.svg`}
+          width={14}
+          height={14}
+          alt="react-icon"
+          key={tech}
+          mx={1}
+        />
       );
     });
   };
 
   return (
     <Fade in={true} transition={{ enter: { duration: 1, delay: 0.5 } }}>
-      <Box
-        backgroundColor="brand.third"
-        mt="16"
-        w={[350, 550]}
-        borderRadius="md"
-        boxShadow="lg"
-        mx="auto"
-      >
-        <Box d="flex" justifyContent="center" mt="2">
-          <Heading fontSize="2xl">Tech Stack</Heading>
-        </Box>
-        <Grid
-          templateColumns={{ base: 'repeat(3,1fr)', md: 'repeat(4,1fr)' }}
-          my="3"
+      <Box d="flex" justifyContent="center" mt="2">
+        <Heading fontSize="5xl">The Tech I Work With</Heading>
+      </Box>
+      <Box d="flex">
+        <Flex
+          backgroundColor="brand.third"
+          mt="16"
+          borderRadius="md"
+          boxShadow="lg"
+          mx="auto"
+          p={2}
         >
           {renderStack()}
-        </Grid>
+        </Flex>
       </Box>
     </Fade>
   );
