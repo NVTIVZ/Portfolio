@@ -14,7 +14,7 @@ const Footer = () => {
       color="brand.baseText"
       fontWeight="semibold"
     >
-      Created by NVTIVZ 2021
+      Created by Jakub Zawadzki 2021
     </Box>
   );
 };
