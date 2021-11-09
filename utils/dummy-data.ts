@@ -8,35 +8,38 @@ const projects = [
     isFeatured: true,
   },
   {
-    name: 'Twitterro',
+    name: 'Twitter clone',
     description:
       'Twitter clone created with purpose to get better understanding at styling and firebase',
     imgURL: '/images/pokedex.png',
-    stack: ['React', 'Redux', 'Styled-Components', 'Firebase', 'TypeScript'],
+    stack: ['TypeScript', 'React', 'Redux', 'Styled-Components', 'Firebase'],
     isFeatured: true,
   },
   {
-    name: 'Siemanko',
+    name: 'Mediation Templemate',
     description:
       'Simple Pokedex made by using React, Redux, Styled-Components,Axios',
     imgURL: '/images/pokedex.png',
-    stack: ['React', 'Redux', 'Styled-Components'],
+    stack: [
+      'TypeScript',
+      'NextJS',
+      'ChakraUI',
+      'NodeJS',
+      'ExpressJS',
+      'MongoDB',
+    ],
     isFeatured: false,
   },
   {
-    name: 'Pokedex3',
+    name: 'Genshin-Characters',
     description:
       'Simple Pokedex made by using React, Redux, Styled-Components,Axios',
     imgURL: '/images/pokedex.png',
-    stack: ['React', 'Redux', 'Styled-Components'],
+    stack: ['TypeScript', 'NextJS', 'React-query', 'ChakraUI'],
     isFeatured: true,
   },
 ];
 
 export const allProjects = () => {
   return projects;
-};
-
-export const featuredProjects = () => {
-  return projects.filter((name) => name.isFeatured);
 };

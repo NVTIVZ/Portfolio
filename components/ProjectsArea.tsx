@@ -3,10 +3,10 @@ import { Heading, Text, Image, Fade } from '@chakra-ui/react';
 import Link from 'next/link';
 import React from 'react';
 import buttonDeterminer from '../utils/buttonDeterminer';
-import { featuredProjects } from '../utils/dummy-data';
+import { allProjects } from '../utils/dummy-data';
 import ProjectCard from './ProjectCard';
 const ProjectsArea = () => {
-  const projects = featuredProjects();
+  const projects = allProjects();
 
   const renderProjects = () => {
     return projects.map((project) => {
@@ -26,7 +26,7 @@ const ProjectsArea = () => {
     <Fade in={true} transition={{ enter: { duration: 1, delay: 1 } }}>
       <Grid
         templateColumns={{ base: 'repeat(1,1fr)', md: 'repeat(2,1fr)' }}
-        templateRows={{ base: 'repeat(4,1fr)', md: 'repeat(4,1fr)' }}
+        templateRows={{ base: 'repeat(5,1fr)', md: 'repeat(5,1fr)' }}
         mt={[8, 16, 48]}
       >
         <GridItem rowSpan={1} colSpan={1}>

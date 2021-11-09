@@ -1,6 +1,6 @@
 import { Box, Grid, Flex, GridItem } from '@chakra-ui/layout';
 import React from 'react';
-import buttonDeterminer from '../utils/buttonDeterminer';
+
 import { Text, Image, Heading } from '@chakra-ui/react';
 
 const ProjectCard = (props: any) => {
@@ -23,27 +23,18 @@ const ProjectCard = (props: any) => {
         <Heading color="brand.text">{props.name}</Heading>
       </Box>
       <Flex ml="4" flexDirection="row" mt="1" flexWrap="wrap">
-        {props.stack.map((stack: any) => {
+        {props.stack.map((stack: any, index: number) => {
           return (
-            <Box
-              d="flex"
-              alignItems="center"
-              py="1"
-              px="2"
-              backgroundColor={`${buttonDeterminer(stack)}`}
-              borderRadius="md"
-              mr="2"
+            <Text
+              fontSize="lg"
+              letterSpacing="wide"
               key={stack}
+              as="kbd"
+              fontWeight="semibold"
             >
-              <Image
-                src={`/images/${stack}-original.svg`}
-                alt="react"
-                width={4}
-              />
-              <Text fontSize="sm" ml="0.5">
-                {stack}
-              </Text>
-            </Box>
+              {index === 0 ? '' : '/'}
+              {stack}
+            </Text>
           );
         })}
       </Flex>
@@ -54,7 +45,7 @@ const ProjectCard = (props: any) => {
         borderTop="1px"
         borderColor="rgba(255,255,255,0.5)"
       >
-        <Text fontWeight="semibold">{props.description}</Text>
+        <Text>{props.description}</Text>
       </Box>
     </GridItem>
   );
