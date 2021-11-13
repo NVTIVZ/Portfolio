@@ -1,7 +1,6 @@
-import { Box, Grid, Flex, GridItem } from '@chakra-ui/layout';
+import { Box, Flex, GridItem } from '@chakra-ui/layout';
+import { Heading, Image, Text } from '@chakra-ui/react';
 import React from 'react';
-
-import { Text, Image, Heading } from '@chakra-ui/react';
 
 const ProjectCard = (props: any) => {
   return (
@@ -19,8 +18,15 @@ const ProjectCard = (props: any) => {
       <Box>
         <Image src={props.imgURL} alt="project" borderTopRadius="lg" />
       </Box>
-      <Box ml="4" mt="1">
+      <Box ml="4" mt="1" d="flex" alignItems="center">
         <Heading color="brand.text">{props.name}</Heading>
+        <Image
+          src="/images/github-original.svg"
+          alt="github"
+          height="8"
+          ml="auto"
+          mr={2}
+        />
       </Box>
       <Flex ml="4" flexDirection="row" mt="1" flexWrap="wrap">
         {props.stack.map((stack: any, index: number) => {

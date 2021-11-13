@@ -5,16 +5,15 @@ const TechStack = () => {
   const techstack = [
     'TypeScript',
     'React',
+    'NextJS',
     'Redux',
     'HTML5',
     'CSS3',
     'Styled-Components',
     'ChakraUI',
-    'Firebase',
-
-    'NextJS',
     'NodeJS',
     'Express',
+    'Firebase',
     'MongoDB',
   ];
   const renderStack = () => {
