@@ -16,9 +16,9 @@ const projects = [
     isFeatured: true,
   },
   {
-    name: 'Mediation Templemate',
+    name: 'Mediation Time',
     description:
-      'Simple Pokedex made by using React, Redux, Styled-Components,Axios',
+      'Website built as a template for mediation company, it used strappi as backend for content but it got changed to express with mongoDB ',
     imgURL: '/images/pokedex.png',
     stack: [
       'TypeScript',
@@ -33,7 +33,7 @@ const projects = [
   {
     name: 'Genshin-Characters',
     description:
-      'Simple Pokedex made by using React, Redux, Styled-Components,Axios',
+      'Site built with purpose of using react-query to fetch data from api and see how it compares to the pokedex i have created before',
     imgURL: '/images/pokedex.png',
     stack: ['TypeScript', 'NextJS', 'React-query', 'ChakraUI'],
     isFeatured: true,

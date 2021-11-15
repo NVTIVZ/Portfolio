@@ -23,9 +23,17 @@ const ProjectCard = (props: any) => {
         <Image
           src="/images/github-original.svg"
           alt="github"
-          height="8"
+          height="7"
           ml="auto"
           mr={2}
+          cursor="pointer"
+        />
+        <Image
+          src="/images/external-link.svg"
+          alt="github"
+          height="7"
+          mr={2}
+          cursor="pointer"
         />
       </Box>
       <Flex ml="4" flexDirection="row" mt="1" flexWrap="wrap">

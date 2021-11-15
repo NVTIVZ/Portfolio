@@ -1,8 +1,7 @@
-import { Box, Grid, Flex, GridItem } from '@chakra-ui/layout';
-import { Heading, Text, Image, Fade } from '@chakra-ui/react';
+import { Grid, GridItem } from '@chakra-ui/layout';
+import { Fade, Heading, Text } from '@chakra-ui/react';
 import Link from 'next/link';
 import React from 'react';
-import buttonDeterminer from '../utils/buttonDeterminer';
 import { allProjects } from '../utils/dummy-data';
 import ProjectCard from './ProjectCard';
 const ProjectsArea = () => {
