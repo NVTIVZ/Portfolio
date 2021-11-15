@@ -20,7 +20,7 @@ const Navigation = () => {
         <Box></Box>
         <Spacer />
         <Box>
-          <Link href="/" passHref>
+          <Link href="#home" passHref>
             <Button
               mr="6"
               backgroundColor="transparent"
@@ -31,7 +31,7 @@ const Navigation = () => {
             </Button>
           </Link>
 
-          <Link href="/projects" passHref>
+          <Link href="#projects" passHref>
             <Button
               mr="6"
               backgroundColor="transparent"
@@ -42,7 +42,7 @@ const Navigation = () => {
             </Button>
           </Link>
 
-          <Link href="/contact" passHref>
+          <Link href="#contact" passHref>
             <Button
               mr="6"
               backgroundColor="transparent"

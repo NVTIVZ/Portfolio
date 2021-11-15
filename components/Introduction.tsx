@@ -4,16 +4,16 @@ import React from 'react';
 const Introduction = () => {
   return (
     <Fade in={true} transition={{ enter: { duration: 1, delay: 0.05 } }}>
-      <Box mt={[24, 32, 48]} mb={[8, 16, 32]}>
+      <Box pt={[24, 32, 48]} mb={[8, 16, 32]} id="home">
         <Heading fontSize={['3xl', '5xl']} mb="-6" fontWeight="bold">
           Hello, my name is
         </Heading>
         <Text
-          fontSize={['5xl', '7xl', '9xl']}
+          fontSize={['4xl', '6xl', '8xl']}
           color="brand.text"
           fontWeight="bold"
         >
-          Andrzej Glowica
+          Jakub Zawadzki
         </Text>
         <Text fontSize={['2xl', '4xl']} mt="-3" fontWeight="semibold">
           Lorem ipsum dolor sit, amet consectetur

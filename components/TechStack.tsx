@@ -43,6 +43,7 @@ const TechStack = () => {
           borderRadius="md"
           boxShadow="lg"
           mx="auto"
+          flexWrap="wrap"
           p={2}
         >
           {renderStack()}

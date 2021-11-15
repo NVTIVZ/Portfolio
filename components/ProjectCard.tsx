@@ -1,4 +1,4 @@
-import { Box, Flex, GridItem } from '@chakra-ui/layout';
+import { Box, Flex, GridItem, Link } from '@chakra-ui/layout';
 import { Heading, Image, Text } from '@chakra-ui/react';
 import React from 'react';
 
@@ -20,21 +20,24 @@ const ProjectCard = (props: any) => {
       </Box>
       <Box ml="4" mt="1" d="flex" alignItems="center">
         <Heading color="brand.text">{props.name}</Heading>
-        <Image
-          src="/images/github-original.svg"
-          alt="github"
-          height="7"
-          ml="auto"
-          mr={2}
-          cursor="pointer"
-        />
-        <Image
-          src="/images/external-link.svg"
-          alt="github"
-          height="7"
-          mr={2}
-          cursor="pointer"
-        />
+        <Link ml="auto" href={props.github} target="_blank">
+          <Image
+            src="/images/github-original.svg"
+            alt="github"
+            height="7"
+            mr={2}
+            cursor="pointer"
+          />
+        </Link>
+        <Link href={props.live} target="_blank">
+          <Image
+            src="/images/external-link.svg"
+            alt="github"
+            height="7"
+            mr={2}
+            cursor="pointer"
+          />
+        </Link>
       </Box>
       <Flex ml="4" flexDirection="row" mt="1" flexWrap="wrap">
         {props.stack.map((stack: any, index: number) => {

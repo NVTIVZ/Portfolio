@@ -7,7 +7,7 @@ import {
   Input,
   Textarea,
 } from '@chakra-ui/react';
-import React, { useRef } from 'react';
+import React from 'react';
 import emailjs from 'emailjs-com';
 import apiKeys from '../utils/apiKeys';
 
@@ -34,7 +34,7 @@ const Contact = () => {
   };
 
   return (
-    <Box align="center" mt={[12, 24, 40]} mb={[18, 36, 60]}>
+    <Box align="center" mt={[12, 24, 40]} mb={[24, 36, 60]} id="contact">
       <Heading fontSize="5xl"> Keep In Touch.</Heading>
       <Text fontSize="lg" mt="1.5">
         {"I'm"} currently open to work as a{' '}
