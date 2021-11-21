@@ -32,7 +32,7 @@ const TechStack = () => {
   };
 
   return (
-    <Fade in={true} transition={{ enter: { duration: 1, delay: 0.5 } }}>
+    <Fade in={true} transition={{ enter: { duration: 0.3, delay: 0.2 } }}>
       <Box d="flex" justifyContent="center" mt="2">
         <Heading fontSize="5xl">The Tech I Work With</Heading>
       </Box>

@@ -11,8 +11,8 @@ const projects = [
   {
     name: 'Twitter clone',
     description:
-      'Twitter clone created with purpose to get better understanding at styling and firebase',
-    imgURL: '/images/pokedex.png',
+      'Twitter clone created with purpose to get better understanding at styling using styled-components and firebase',
+    imgURL: '/images/twitter.jpeg',
     stack: ['TypeScript', 'React', 'Redux', 'Styled-Components', 'Firebase'],
     github: 'https://github.com/NVTIVZ/Twitter-Typescript',
     live: '',
@@ -21,7 +21,7 @@ const projects = [
     name: 'Mediation Time',
     description:
       'Website built as a template for mediation company, it used strappi as backend for content but it got changed to express with mongoDB ',
-    imgURL: '/images/pokedex.png',
+    imgURL: '/images/mediation.png',
     stack: [
       'TypeScript',
       'NextJS',
@@ -37,9 +37,9 @@ const projects = [
     name: 'Genshin-Characters',
     description:
       'Site built with purpose of using react-query to fetch data from api and see how it compares to the pokedex i have created before',
-    imgURL: '/images/pokedex.png',
+    imgURL: '/images/genshin.jpeg',
     stack: ['TypeScript', 'NextJS', 'React-query', 'ChakraUI'],
-    github: 'https://github.com/NVTIVZ/Pokedexv2',
+    github: 'https://github.com/NVTIVZ/Genshin-Characters',
     live: '',
   },
 ];
