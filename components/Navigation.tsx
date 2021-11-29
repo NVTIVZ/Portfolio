@@ -8,7 +8,7 @@ const Navigation = () => {
     <Flex
       as="nav"
       py="4"
-      px={[0, 32]}
+      px={[0, 8, 32]}
       backgroundColor="brand.primary"
       align="center"
     >

@@ -1,5 +1,5 @@
 import { Grid, GridItem } from '@chakra-ui/layout';
-import { Fade, Heading } from '@chakra-ui/react';
+import { Fade, Heading, Text } from '@chakra-ui/react';
 import React from 'react';
 import { allProjects } from '../utils/dummy-data';
 import ProjectCard from './ProjectCard';
@@ -7,7 +7,7 @@ const ProjectsArea = () => {
   const projects = allProjects();
 
   const renderProjects = () => {
-    return projects.map((project) => {
+    return projects.map((project, index) => {
       return (
         <ProjectCard
           name={project.name}
@@ -17,6 +17,7 @@ const ProjectsArea = () => {
           github={project.github}
           live={project.live}
           key={project.name}
+          index={index}
         />
       );
     });
@@ -31,6 +32,9 @@ const ProjectsArea = () => {
     >
       <GridItem rowSpan={1} colSpan={1}>
         <Heading fontSize={['6xl', '8xl']}>My Projects.</Heading>
+        <Text mt={2} fontSize={'2xl'}>
+          Here is some projects i{"'ve"} been working on past months.
+        </Text>
       </GridItem>
       {renderProjects()}
     </Grid>

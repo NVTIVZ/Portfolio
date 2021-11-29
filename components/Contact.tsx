@@ -43,7 +43,7 @@ const Contact = () => {
           Front-end Developer.
         </Box>
       </Text>
-      <Box d="flex" justifyContent="center" mt="4">
+      <Box d="flex" justifyContent="center" mt="4" flexWrap="wrap">
         <Link href="https://github.com/NVTIVZ" target="_blank">
           <Button
             backgroundColor="rgba(255,255,255,0.1)"
@@ -52,6 +52,7 @@ const Contact = () => {
             alignItems="center"
             mr="4"
             position="static"
+            mb={1}
           >
             <Image
               src="/images/github-original.svg"
@@ -70,6 +71,7 @@ const Contact = () => {
             alignItems="center"
             mr="4"
             position="static"
+            mb={1}
           >
             <Image
               src="/images/linkedin-original.svg"

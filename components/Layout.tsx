@@ -18,7 +18,7 @@ const Layout = (props: any) => {
         height="auto"
         flexDirection="column"
         backgroundColor="theming.secondary"
-        px={[4, 12, 24, 48]}
+        px={[4, 8, 12, 24, 36, 48]}
         minH="100vh"
       >
         {props.children}

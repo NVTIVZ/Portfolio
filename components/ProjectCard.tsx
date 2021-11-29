@@ -7,11 +7,12 @@ const ProjectCard = (props: any) => {
     <GridItem
       flexDirection="column"
       key={props.name}
-      mx="2"
+      ml={props.index === 0 || props.index === 2 ? [0, 0, 4] : '0'}
+      mr={props.index === 0 || props.index === 2 ? '0' : [0, 0, 4]}
       my="6"
       backgroundColor="brand.third"
       borderRadius="lg"
-      rowSpan={[1, 2]}
+      rowSpan={[2]}
       colSpan={1}
       boxShadow="lg"
     >

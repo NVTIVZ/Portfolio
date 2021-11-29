@@ -44,6 +44,7 @@ const TechStack = () => {
           boxShadow="lg"
           mx="auto"
           flexWrap="wrap"
+          justifyContent="center"
           p={2}
         >
           {renderStack()}

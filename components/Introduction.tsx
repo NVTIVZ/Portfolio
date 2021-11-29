@@ -4,31 +4,43 @@ import React from 'react';
 const Introduction = () => {
   return (
     <Fade in={true} transition={{ enter: { duration: 0.3, delay: 0.1 } }}>
-      <Box pt={[24, 32, 48]} mb={[8, 12, 16]} id="home" d="flex">
-        <Box>
-          <Heading fontSize={['3xl', '5xl']} mb="-6" fontWeight="bold">
-            Hello, my name is
-          </Heading>
+      <Box
+        pt={[24, 32, 64]}
+        mb={[8, 12, 48]}
+        id="home"
+        d="flex"
+        flexDirection={{ base: 'column', xl: 'row' }}
+        justifyContent="center"
+        alignItems="center"
+      >
+        <Box pr={8}>
           <Text
-            fontSize={['4xl', '6xl', '8xl']}
+            fontSize={['3xl', '5xl', '6xl', '6xl']}
             color="brand.text"
             fontWeight="bold"
           >
             Jakub Zawadzki
           </Text>
-          <Text fontSize={['2xl', '4xl']} mt="-3" fontWeight="semibold">
-            Lorem ipsum dolor sit, amet consectetur
-          </Text>
-          <Box d="flex" mt="4" zIndex="1"></Box>
         </Box>
-        <Image
-          src="/images/photo.png"
-          alt="photo"
-          ml="auto"
-          mr={24}
-          height={450}
-          boxShadow="60px -32px #FFD369"
-        />
+        <Box
+          width="463px"
+          pl={8}
+          borderLeft={{ base: 'none', xl: '4px' }}
+          borderColor={{ base: 'none', xl: 'brand.third' }}
+        >
+          <Text fontWeight="semibold">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi
+            recusandae, reiciendis praesentium corporis ab quis laudantium
+            molestiae aperiam itaque dignissimos, rerum quasi, sit quas expedita
+            quibusdam repellat illo tempora! Ea?
+          </Text>
+          <Text fontWeight="semibold" mt={4}>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi
+            recusandae, reiciendis praesentium corporis ab quis laudantium
+            molestiae aperiam itaque dignissimos, rerum quasi, sit quas expedita
+            quibusdam repellat illo tempora! Ea?
+          </Text>
+        </Box>
       </Box>
     </Fade>
   );

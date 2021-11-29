@@ -8,12 +8,20 @@ const Footer = () => {
       d="flex"
       justifyContent="center"
       py="6"
-      bottom="0"
-      position="absolute"
       width="100%"
       color="brand.baseText"
       fontWeight="semibold"
     >
+      <Box
+        position="absolute"
+        right="10"
+        fontSize="sm"
+        bottom="45"
+        onClick={() => window.scrollTo(0, 0)}
+        cursor="pointer"
+      >
+        Scroll to Top
+      </Box>
       Created by Jakub Zawadzki 2021
     </Box>
   );
