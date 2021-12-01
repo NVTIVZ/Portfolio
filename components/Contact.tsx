@@ -124,7 +124,7 @@ const Contact = () => {
         You can contact me using form below
       </Text>
       <Box maxW={[400, 500]} mt={2}>
-        <form onSubmit={sendEmail}>
+        <form name="contact" method="POST" data-netlify="true">
           <Input placeholder="Name" my="4" name="name" />
           <Input placeholder="E-mail" my="4" name="email" />
 
