@@ -8,30 +8,26 @@ import {
   Textarea,
   Link,
 } from '@chakra-ui/react';
-import React from 'react';
+import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
-import apiKeys from '../utils/apiKeys';
 
 const Contact = () => {
+  const templateId = process.env.NEXT_PUBLIC_TEMPLATE_ID;
+  const userId = process.env.NEXT_PUBLIC_USER_ID;
+
+  const [message, setMessage] = useState('');
   const sendEmail = (e: any) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        'service_vwogkyk',
-        apiKeys.TEMPLATE_ID,
-        e.target,
-        apiKeys.USER_ID
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          e.target.reset();
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    emailjs.sendForm('service_vwogkyk', templateId!, e.target, userId).then(
+      (result) => {
+        setMessage('Message sent');
+        e.target.reset();
+      },
+      (error) => {
+        setMessage(error.text);
+      }
+    );
   };
 
   return (
@@ -139,7 +135,8 @@ const Contact = () => {
             resize="none"
             height={192}
           />
-          <Box d="flex">
+          {message ? message : ''}
+          <Box d="flex" mt={1}>
             <Button
               color="brand.text"
               backgroundColor="rgba(255,255,255,0.1)"
