@@ -125,8 +125,9 @@ const Contact = () => {
       </Text>
       <Box maxW={[400, 500]} mt={2}>
         <form name="contact" method="POST" data-netlify="true">
-          <Input placeholder="Name" my="4" name="name" />
-          <Input placeholder="E-mail" my="4" name="email" />
+          <input type="hidden" name="form-name" value="contact" />
+          <Input placeholder="Name" my="4" name="name" type="text" />
+          <Input placeholder="E-mail" my="4" name="email" type="text" />
 
           <Textarea
             placeholder="Message"
@@ -135,7 +136,6 @@ const Contact = () => {
             resize="none"
             height={192}
           />
-          {message ? message : ''}
           <Box d="flex" mt={1}>
             <Button
               color="brand.text"
