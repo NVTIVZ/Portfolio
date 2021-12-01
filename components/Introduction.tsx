@@ -13,7 +13,7 @@ const Introduction = () => {
         justifyContent="center"
         alignItems="center"
       >
-        <Box pr={8}>
+        <Box pr={{ base: '0', xl: '8' }} pb={{ base: '8', xl: '0' }}>
           <Text
             fontSize={['3xl', '5xl', '6xl', '6xl']}
             color="brand.text"
@@ -23,10 +23,12 @@ const Introduction = () => {
           </Text>
         </Box>
         <Box
-          width="463px"
-          pl={8}
+          width={['300px', '463px']}
+          pl={{ base: '0', xl: '8' }}
+          pt={{ base: '8', xl: '0' }}
           borderLeft={{ base: 'none', xl: '4px' }}
-          borderColor={{ base: 'none', xl: 'brand.third' }}
+          borderTop={{ base: '4px', xl: 'none' }}
+          borderColor={{ base: 'brand.third', xl: 'brand.third' }}
         >
           <Text fontWeight="semibold">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi

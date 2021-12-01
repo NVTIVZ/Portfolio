@@ -19,6 +19,7 @@ const Theme = extendTheme({
         fontFamily:
           '-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif',
         bg: '#222831',
+
         color: '#EEEEEE',
       },
       html: {

@@ -22,7 +22,7 @@ const Footer = () => {
       >
         Scroll to Top
       </Box>
-      Created by Jakub Zawadzki 2021
+      © 2021 Jakub Zawadzki
     </Box>
   );
 };

@@ -63,7 +63,10 @@ const Contact = () => {
             Github
           </Button>
         </Link>
-        <Link href="https://github.com/NVTIVZ" target="_blank">
+        <Link
+          href="https://www.linkedin.com/in/jakub-zawadzki-27b511227/"
+          target="_blank"
+        >
           <Button
             backgroundColor="rgba(255,255,255,0.1)"
             _hover={{ bg: 'rgba(255,255,255,0.2)' }}
@@ -82,7 +85,7 @@ const Contact = () => {
             LinkedIn
           </Button>
         </Link>
-        <Link href="mailto:jakubzawadzki97@gmail.com" target="_blank">
+        <Link href="mailto:j.zawadzkidev@gmail.com" target="_blank">
           <Button
             backgroundColor="rgba(255,255,255,0.1)"
             _hover={{ bg: 'rgba(255,255,255,0.2)' }}

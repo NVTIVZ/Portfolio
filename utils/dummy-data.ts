@@ -1,8 +1,7 @@
 const projects = [
   {
     name: 'Pokedex',
-    description:
-      'Simple Pokedex made by using React, Redux, Styled-Components,Axios',
+    description: 'Made by using PokeAPI with Redux as a global state ',
     imgURL: '/images/pokedex.png',
     stack: ['React', 'Redux', 'Styled-Components'],
     github: 'https://github.com/NVTIVZ/Pokedexv2',
@@ -15,7 +14,7 @@ const projects = [
     imgURL: '/images/twitter.jpeg',
     stack: ['TypeScript', 'React', 'Redux', 'Styled-Components', 'Firebase'],
     github: 'https://github.com/NVTIVZ/Twitter-Typescript',
-    live: '',
+    live: 'https://cranky-elion-5a21ac.netlify.app',
   },
   {
     name: 'Mediation Time',
@@ -30,15 +29,15 @@ const projects = [
       'ExpressJS',
       'MongoDB',
     ],
-    github: 'https://github.com/NVTIVZ/Pokedexv2',
-    live: '',
+    github: 'https://github.com/NVTIVZ/Mediation-time',
+    live: 'https://github.com/NVTIVZ/Mediation-time',
   },
   {
     name: 'Genshin-Characters',
     description:
       'Site built with purpose of using react-query to fetch data from api and see how it compares to the pokedex i have created before',
     imgURL: '/images/genshin.jpeg',
-    stack: ['TypeScript', 'NextJS', 'React-query', 'ChakraUI'],
+    stack: ['TypeScript', 'React', 'React-query', 'ChakraUI'],
     github: 'https://github.com/NVTIVZ/Genshin-Characters',
     live: '',
   },
