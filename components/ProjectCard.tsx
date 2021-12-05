@@ -15,13 +15,15 @@ const ProjectCard = (props: any) => {
 
   return (
     <GridItem key={props.name} rowSpan={[2]} colSpan={1} ref={ref}>
-      <Slide
-        direction={props.index === 0 || props.index === 2 ? 'right' : 'left'}
+      <SlideFade
+        offsetX={props.index === 0 || props.index === 2 ? '30px' : '-30px'}
+        offsetY={0}
         in={enterCount > 0}
         unmountOnExit={true}
         style={{
           position: 'relative',
         }}
+        transition={{ enter: { duration: 0.5 } }}
       >
         <Flex
           flexDirection="column"
@@ -83,7 +85,7 @@ const ProjectCard = (props: any) => {
             <Text>{props.description}</Text>
           </Box>
         </Flex>{' '}
-      </Slide>
+      </SlideFade>
     </GridItem>
   );
 };
