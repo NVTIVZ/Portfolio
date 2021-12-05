@@ -2,39 +2,38 @@ import {
   Box,
   Button,
   Heading,
-  Text,
   Image,
   Input,
-  Textarea,
   Link,
+  Text,
+  Textarea,
 } from '@chakra-ui/react';
-import React, { useState } from 'react';
-import emailjs from 'emailjs-com';
+import React from 'react';
 
 const Contact = () => {
-  const templateId = process.env.NEXT_PUBLIC_TEMPLATE_ID;
-  const userId = process.env.NEXT_PUBLIC_USER_ID;
+  // const templateId = process.env.NEXT_PUBLIC_TEMPLATE_ID;
+  // const userId = process.env.NEXT_PUBLIC_USER_ID;
 
-  const [message, setMessage] = useState('');
-  const sendEmail = (e: any) => {
-    e.preventDefault();
+  // const [message, setMessage] = useState('');
+  // const sendEmail = (e: any) => {
+  //   e.preventDefault();
 
-    emailjs.sendForm('service_vwogkyk', templateId!, e.target, userId).then(
-      (result) => {
-        setMessage('Message sent');
-        e.target.reset();
-      },
-      (error) => {
-        setMessage(error.text);
-      }
-    );
-  };
+  //   emailjs.sendForm('service_vwogkyk', templateId!, e.target, userId).then(
+  //     (result) => {
+  //       setMessage('Message sent');
+  //       e.target.reset();
+  //     },
+  //     (error) => {
+  //       setMessage(error.text);
+  //     }
+  //   );
+  // };
 
   return (
     <Box align="center" mt={[12, 24, 40]} mb={[24, 36, 72]} id="contact">
       <Heading fontSize="5xl"> Keep In Touch.</Heading>
       <Text fontSize="lg" mt="4">
-        I am currently open to work as a{' '}
+        I am currently open to work as intern or junior{' '}
         <Box as="span" color="brand.text">
           Front-end Developer.
         </Box>

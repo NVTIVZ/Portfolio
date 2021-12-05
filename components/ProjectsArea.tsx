@@ -1,8 +1,9 @@
-import { Grid, GridItem } from '@chakra-ui/layout';
+import { Grid, GridItem, Link } from '@chakra-ui/layout';
 import { Fade, Heading, Text } from '@chakra-ui/react';
 import React from 'react';
 import { allProjects } from '../utils/dummy-data';
 import ProjectCard from './ProjectCard';
+
 const ProjectsArea = () => {
   const projects = allProjects();
 
@@ -29,11 +30,22 @@ const ProjectsArea = () => {
       templateRows={{ base: 'repeat(5,1fr)', md: 'repeat(5,1fr)' }}
       mt={[8, 16, 32]}
       id="projects"
+      position="static"
     >
-      <GridItem rowSpan={1} colSpan={1}>
-        <Heading fontSize={['6xl', '8xl']}>My Projects.</Heading>
-        <Text mt={2} fontSize={'2xl'}>
-          Here is some projects i{"'ve"} been working on past months.
+      <GridItem rowSpan={1} colSpan={1} d="flex" flexDirection="column">
+        <Heading fontSize={['4xl', '6xl', '7xl']} mx={['auto', 0]}>
+          My Projects.
+        </Heading>
+        <Text mt={2} fontSize={['xl', '2xl']}>
+          Here is some featured projects i{"'ve"} been working on past months.
+          The rest of my works you can find on my{' '}
+          <Link
+            href="https://github.com/NVTIVZ"
+            target="_blank"
+            color="brand.text"
+          >
+            GitHub
+          </Link>
         </Text>
       </GridItem>
       {renderProjects()}

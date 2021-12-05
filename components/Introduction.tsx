@@ -5,7 +5,7 @@ const Introduction = () => {
   return (
     <Fade in={true} transition={{ enter: { duration: 0.3, delay: 0.1 } }}>
       <Box
-        pt={[24, 32, 64]}
+        pt={[16, 32, 64]}
         mb={[8, 12, 48]}
         id="home"
         d="flex"
@@ -15,7 +15,7 @@ const Introduction = () => {
       >
         <Box pr={{ base: '0', xl: '8' }} pb={{ base: '8', xl: '0' }}>
           <Text
-            fontSize={['3xl', '5xl', '6xl', '6xl']}
+            fontSize={['4xl', '5xl', '6xl', '6xl']}
             color="brand.text"
             fontWeight="bold"
           >
@@ -30,12 +30,7 @@ const Introduction = () => {
           borderTop={{ base: '4px', xl: 'none' }}
           borderColor={{ base: 'brand.third', xl: 'brand.third' }}
         >
-          <Text fontWeight="semibold">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi
-            recusandae, reiciendis praesentium corporis ab quis laudantium
-            molestiae aperiam itaque dignissimos, rerum quasi, sit quas expedita
-            quibusdam repellat illo tempora! Ea?
-          </Text>
+          <Text fontWeight="semibold">Hello, I{"'m"}</Text>
           <Text fontWeight="semibold" mt={4}>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi
             recusandae, reiciendis praesentium corporis ab quis laudantium

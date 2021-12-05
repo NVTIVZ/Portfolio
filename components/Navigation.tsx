@@ -11,6 +11,7 @@ const Navigation = () => {
       px={[0, 8, 32]}
       backgroundColor="brand.primary"
       align="center"
+      display={['none', 'flex']}
     >
       <Box></Box>
       <Spacer />

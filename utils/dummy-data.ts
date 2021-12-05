@@ -30,7 +30,7 @@ const projects = [
       'MongoDB',
     ],
     github: 'https://github.com/NVTIVZ/Mediation-time',
-    live: 'https://github.com/NVTIVZ/Mediation-time',
+    live: 'https://stupefied-franklin-a0d861.netlify.app',
   },
   {
     name: 'Genshin-Characters',

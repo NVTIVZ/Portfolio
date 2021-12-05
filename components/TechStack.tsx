@@ -1,4 +1,4 @@
-import { Box, Heading, Grid, Image, Text, Fade, Flex } from '@chakra-ui/react';
+import { Box, Fade, Flex, Heading, Image } from '@chakra-ui/react';
 import React from 'react';
 
 const TechStack = () => {
@@ -34,7 +34,7 @@ const TechStack = () => {
   return (
     <Fade in={true} transition={{ enter: { duration: 0.3, delay: 0.2 } }}>
       <Box d="flex" justifyContent="center" mt="2">
-        <Heading fontSize="5xl">The Tech I Work With</Heading>
+        <Heading fontSize={['3xl', '6xl']}>The Tech I Work With</Heading>
       </Box>
       <Box d="flex">
         <Flex
