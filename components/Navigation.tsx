@@ -16,17 +16,6 @@ const Navigation = () => {
       <Box></Box>
       <Spacer />
       <Box>
-        <Link href="#home" passHref>
-          <Button
-            mr="6"
-            backgroundColor="transparent"
-            color="brand.baseText"
-            _hover={{ bg: 'rgba(255, 255, 255, 0.1)' }}
-          >
-            Home
-          </Button>
-        </Link>
-
         <Link href="#projects" passHref>
           <Button
             mr="6"

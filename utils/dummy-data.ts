@@ -1,7 +1,8 @@
 const projects = [
   {
     name: 'Pokedex',
-    description: 'Made by using PokeAPI with Redux as a global state ',
+    description:
+      'My first own project built using a PokeAPI from which i was fetching data using axios into Redux.Purpose of this project was to get better at basics of React and Redux   ',
     imgURL: '/images/pokedex.png',
     stack: ['React', 'Redux', 'Styled-Components'],
     github: 'https://github.com/NVTIVZ/Pokedexv2',
@@ -12,7 +13,7 @@ const projects = [
     description:
       'Twitter clone created with purpose to get better understanding at styling using styled-components and firebase',
     imgURL: '/images/twitter.jpeg',
-    stack: ['TypeScript', 'React', 'Redux', 'Styled-Components', 'Firebase'],
+    stack: ['React', 'Redux', 'Styled-Components', 'Firebase'],
     github: 'https://github.com/NVTIVZ/Twitter-Typescript',
     live: 'https://cranky-elion-5a21ac.netlify.app',
   },
@@ -21,25 +22,18 @@ const projects = [
     description:
       'Website built as a template for mediation company, it used strappi as backend for content but it got changed to express with mongoDB ',
     imgURL: '/images/mediation.png',
-    stack: [
-      'TypeScript',
-      'NextJS',
-      'ChakraUI',
-      'NodeJS',
-      'ExpressJS',
-      'MongoDB',
-    ],
+    stack: ['NextJS', 'ChakraUI', 'NodeJS', 'ExpressJS', 'MongoDB'],
     github: 'https://github.com/NVTIVZ/Mediation-time',
     live: 'https://stupefied-franklin-a0d861.netlify.app',
   },
   {
-    name: 'Genshin-Characters',
+    name: 'TFT Builder',
     description:
-      'Site built with purpose of using react-query to fetch data from api and see how it compares to the pokedex i have created before',
-    imgURL: '/images/genshin.jpeg',
-    stack: ['TypeScript', 'React', 'React-query', 'ChakraUI'],
-    github: 'https://github.com/NVTIVZ/Genshin-Characters',
-    live: '',
+      "Project I am currently working on, it is team builder for the game Teamfight Tactics. It will have interactive board where you'll be able to drag and drop units  ",
+    imgURL: '/images/tft.png',
+    stack: ['React', 'Styled-Components', 'DND-Kit'],
+    github: 'https://github.com/NVTIVZ/TFT-Builder',
+    live: false,
   },
 ];
 

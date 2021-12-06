@@ -16,7 +16,7 @@ const ProjectCard = (props: any) => {
   return (
     <GridItem key={props.name} rowSpan={[2]} colSpan={1} ref={ref}>
       <SlideFade
-        offsetX={props.index === 0 || props.index === 2 ? '30px' : '-30px'}
+        offsetX={props.index === 0 || props.index === 2 ? '20px' : '-20px'}
         offsetY={0}
         in={enterCount > 0}
         unmountOnExit={true}
@@ -36,20 +36,29 @@ const ProjectCard = (props: any) => {
         >
           {' '}
           <Box minHeight="111">
-            <Image src={props.imgURL} alt="project" borderTopRadius="lg" />
+            <Image
+              src={props.imgURL}
+              alt="project"
+              borderTopRadius="lg"
+              style={
+                props.index === 3
+                  ? { filter: 'blur(3px)', transform: 'scale(0.995)' }
+                  : {}
+              }
+            />
           </Box>
           <Box ml="4" mt="1" d="flex" alignItems="center">
             <Heading color="brand.text">{props.name}</Heading>
             <Link ml="auto" href={props.github} target="_blank">
               <Image
-                src="/images/github-original.svg"
+                src="/images/github-white.svg"
                 alt="github"
                 height="7"
                 mr={2}
                 cursor="pointer"
               />
             </Link>
-            <Link href={props.live} target="_blank">
+            <Link href={props.live} target="_blank" disabled>
               <Image
                 src="/images/external-link.svg"
                 alt="github"

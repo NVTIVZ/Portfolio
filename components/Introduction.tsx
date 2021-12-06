@@ -13,13 +13,28 @@ const Introduction = () => {
         justifyContent="center"
         alignItems="center"
       >
-        <Box pr={{ base: '0', xl: '8' }} pb={{ base: '8', xl: '0' }}>
+        <Box
+          pr={{ base: '0', xl: '8' }}
+          pb={{ base: '8', xl: '0' }}
+          d="flex"
+          flexDirection="column"
+        >
           <Text
             fontSize={['4xl', '5xl', '6xl', '6xl']}
             color="brand.text"
             fontWeight="bold"
           >
             Jakub Zawadzki
+          </Text>
+          <Text
+            mt={2}
+            ml="auto"
+            fontWeight="bold"
+            color="whiteAlpha.600"
+            fontSize="2xl"
+            d="flex"
+          >
+            <Image src="/images/map-pin.svg" alt="pin" mr={1} /> Wrocław,Poland
           </Text>
         </Box>
         <Box
@@ -30,12 +45,23 @@ const Introduction = () => {
           borderTop={{ base: '4px', xl: 'none' }}
           borderColor={{ base: 'brand.third', xl: 'brand.third' }}
         >
-          <Text fontWeight="semibold">Hello, I{"'m"}</Text>
-          <Text fontWeight="semibold" mt={4}>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi
-            recusandae, reiciendis praesentium corporis ab quis laudantium
-            molestiae aperiam itaque dignissimos, rerum quasi, sit quas expedita
-            quibusdam repellat illo tempora! Ea?
+          <Text fontWeight="hairline" fontSize="xl">
+            Hello, I{"'m"} a self-taught Frontend developer who took a liking in
+            creating static and dynamic mobile-responsive websites.
+          </Text>
+          <Text fontWeight="hairline" mt={4} fontSize="xl">
+            I make web apps using{' '}
+            <Box as="span" color="blue.300">
+              React
+            </Box>{' '}
+            /{' '}
+            <Box as="span" color="gray.400">
+              NextJS
+            </Box>{' '}
+            and CSS frameworks like{' '}
+            <Box as="span" color="green.400">
+              ChakraUI
+            </Box>
           </Text>
         </Box>
       </Box>

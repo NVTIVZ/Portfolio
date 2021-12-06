@@ -34,7 +34,7 @@ const ProjectsArea = () => {
     >
       <GridItem rowSpan={1} colSpan={1} d="flex" flexDirection="column">
         <Heading fontSize={['4xl', '6xl', '7xl']} mx={['auto', 0]}>
-          My Projects.
+          My Projects
         </Heading>
         <Text mt={2} fontSize={['xl', '2xl']}>
           Here is some featured projects i{"'ve"} been working on past months.
