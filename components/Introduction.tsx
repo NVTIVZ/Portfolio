@@ -1,9 +1,10 @@
-import { Box, Heading, Text, Image, Button, Fade } from '@chakra-ui/react';
+import { Box, Heading, Text, Button, Fade } from '@chakra-ui/react';
+import Image from 'next/image';
 import React from 'react';
 
 const Introduction = () => {
   return (
-    <Fade in={true} transition={{ enter: { duration: 0.3, delay: 0.1 } }}>
+    <Fade in={true} transition={{ enter: { duration: 0.4, delay: 0.2 } }}>
       <Box
         pt={[16, 32, 64]}
         mb={[8, 12, 48]}
@@ -26,16 +27,24 @@ const Introduction = () => {
           >
             Jakub Zawadzki
           </Text>
-          <Text
-            mt={2}
-            ml="auto"
-            fontWeight="bold"
-            color="whiteAlpha.600"
-            fontSize="2xl"
-            d="flex"
-          >
-            <Image src="/images/map-pin.svg" alt="pin" mr={1} /> Wrocław,Poland
-          </Text>
+          <Box d="flex">
+            <Box ml="auto" alignItems="center" d="flex">
+              <Image
+                src="/images/map-pin.svg"
+                alt="pin"
+                width="28"
+                height="28"
+              />
+            </Box>{' '}
+            <Text
+              mt={2}
+              fontWeight="bold"
+              color="whiteAlpha.600"
+              fontSize="2xl"
+            >
+              Wrocław,Poland
+            </Text>
+          </Box>
         </Box>
         <Box
           width={['300px', '463px']}
@@ -58,7 +67,7 @@ const Introduction = () => {
             <Box as="span" color="gray.400">
               NextJS
             </Box>{' '}
-            and CSS frameworks like{' '}
+            and CSS /{' '}
             <Box as="span" color="green.400">
               ChakraUI
             </Box>

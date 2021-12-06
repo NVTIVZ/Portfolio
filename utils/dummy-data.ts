@@ -29,11 +29,11 @@ const projects = [
   {
     name: 'TFT Builder',
     description:
-      "Project I am currently working on, it is team builder for the game Teamfight Tactics. It will have interactive board where you'll be able to drag and drop units  ",
+      "Project I am currently working on, it is a team builder for the game Teamfight Tactics. It will have interactive board where you'll be able to drag and drop units  ",
     imgURL: '/images/tft.png',
     stack: ['React', 'Styled-Components', 'DND-Kit'],
     github: 'https://github.com/NVTIVZ/TFT-Builder',
-    live: false,
+    live: 'false',
   },
 ];
 

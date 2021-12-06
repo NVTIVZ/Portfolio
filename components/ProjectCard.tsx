@@ -2,6 +2,7 @@ import { Box, Flex, GridItem, Link } from '@chakra-ui/layout';
 import { Heading, Image, Text } from '@chakra-ui/react';
 import { Slide, SlideFade } from '@chakra-ui/transition';
 import React, { useRef } from 'react';
+import NextImage from 'next/image';
 import { useInViewport } from 'react-in-viewport';
 
 const ProjectCard = (props: any) => {
@@ -35,16 +36,13 @@ const ProjectCard = (props: any) => {
           my="6"
         >
           {' '}
-          <Box minHeight="111">
-            <Image
+          <Box borderTopRadius="lg" overflow="hidden">
+            <NextImage
               src={props.imgURL}
               alt="project"
-              borderTopRadius="lg"
-              style={
-                props.index === 3
-                  ? { filter: 'blur(3px)', transform: 'scale(0.995)' }
-                  : {}
-              }
+              layout="responsive"
+              width="929"
+              height="505"
             />
           </Box>
           <Box ml="4" mt="1" d="flex" alignItems="center">
