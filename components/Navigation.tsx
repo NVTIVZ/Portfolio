@@ -1,6 +1,5 @@
 import { Flex, Box, Spacer } from '@chakra-ui/layout';
 import { Button } from '@chakra-ui/button';
-import { Slide } from '@chakra-ui/transition';
 import Link from 'next/link';
 
 const Navigation = () => {

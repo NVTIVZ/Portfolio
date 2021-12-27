@@ -6,7 +6,7 @@ const projects = [
     imgURL: '/images/pokedex.png',
     stack: ['React', 'Redux', 'Styled-Components'],
     github: 'https://github.com/NVTIVZ/Pokedexv2',
-    live: 'https://pedantic-carson-1f4d82.netlify.app/',
+    live: 'https://nvtivz-pokedex.netlify.app',
   },
   {
     name: 'Twitter clone',
@@ -15,7 +15,7 @@ const projects = [
     imgURL: '/images/twitter.jpeg',
     stack: ['React', 'Redux', 'Styled-Components', 'Firebase'],
     github: 'https://github.com/NVTIVZ/Twitter-Typescript',
-    live: 'https://cranky-elion-5a21ac.netlify.app',
+    live: 'https://nvtivz-twitter.netlify.app',
   },
   {
     name: 'Mediation Time',
@@ -24,7 +24,7 @@ const projects = [
     imgURL: '/images/mediation.png',
     stack: ['NextJS', 'ChakraUI', 'NodeJS', 'ExpressJS', 'MongoDB'],
     github: 'https://github.com/NVTIVZ/Mediation-time',
-    live: 'https://stupefied-franklin-a0d861.netlify.app',
+    live: 'https://mediation-time.netlify.app',
   },
   {
     name: 'TFT Builder',

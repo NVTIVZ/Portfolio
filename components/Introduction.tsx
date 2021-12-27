@@ -28,7 +28,7 @@ const Introduction = () => {
             Jakub Zawadzki
           </Text>
           <Box d="flex">
-            <Box ml="auto" alignItems="center" d="flex">
+            <Box ml="auto" alignItems="center" d="flex" mt={2}>
               <Image
                 src="/images/map-pin.svg"
                 alt="pin"
@@ -41,6 +41,7 @@ const Introduction = () => {
               fontWeight="bold"
               color="whiteAlpha.600"
               fontSize="2xl"
+              ml={1}
             >
               Wrocław,Poland
             </Text>

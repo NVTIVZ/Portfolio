@@ -48,6 +48,7 @@ const Contact = () => {
             mr="4"
             position="static"
             mb={1}
+            width="125px"
           >
             <Image
               src="/images/github-original.svg"
@@ -58,10 +59,7 @@ const Contact = () => {
             Github
           </Button>
         </Link>
-        <Link
-          href="https://www.linkedin.com/in/jakub-zawadzki-27b511227/"
-          target="_blank"
-        >
+        <Link href="https://www.linkedin.com/in/jzawadzkidev/" target="_blank">
           <Button
             backgroundColor="rgba(255,255,255,0.1)"
             _hover={{ bg: 'rgba(255,255,255,0.2)' }}
@@ -70,6 +68,7 @@ const Contact = () => {
             mr="4"
             position="static"
             mb={1}
+            width="125px"
           >
             <Image
               src="/images/linkedin-original.svg"
@@ -88,6 +87,7 @@ const Contact = () => {
             mr="4"
             alignItems="center"
             position="static"
+            width="125px"
           >
             <Image
               src="/images/mail.svg"
@@ -99,7 +99,10 @@ const Contact = () => {
             Email
           </Button>
         </Link>
-        <Link href="https://github.com/NVTIVZ" target="_blank">
+        <Link
+          href="https://drive.google.com/file/d/1bRrVbI0VVU9uECWTRHCXA_EZWdMPGfwd/view?usp=sharing"
+          target="_blank"
+        >
           <Button
             backgroundColor="rgba(255,255,255,0.1)"
             _hover={{ bg: 'rgba(255,255,255,0.2)' }}
@@ -107,6 +110,7 @@ const Contact = () => {
             mr="4"
             alignItems="center"
             position="static"
+            width="125px"
           >
             <Image
               src="/images/file-text.svg"
@@ -126,7 +130,7 @@ const Contact = () => {
         <form name="contact" method="POST" data-netlify="true">
           <input type="hidden" name="form-name" value="contact" />
           <Input placeholder="Name" my="4" name="name" type="text" />
-          <Input placeholder="E-mail" my="4" name="email" type="text" />
+          <Input placeholder="E-mail" my="4" name="email" type="email" />
 
           <Textarea
             placeholder="Message"
