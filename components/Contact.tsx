@@ -33,7 +33,7 @@ const Contact = () => {
     <Box align="center" mt={[12, 24, 40]} mb={[24, 36, 72]} id="contact">
       <Heading fontSize="5xl"> Keep In Touch.</Heading>
       <Text fontSize="lg" mt="4">
-        I am currently open to work as a intern or junior{' '}
+        I am currently open to work as a{' '}
         <Box as="span" color="brand.text">
           Front-end Developer.
         </Box>
