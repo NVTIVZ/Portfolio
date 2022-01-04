@@ -15,7 +15,7 @@ const projects = [
     imgURL: '/images/twitter.jpeg',
     stack: ['React', 'Redux', 'Styled-Components', 'Firebase'],
     github: 'https://github.com/NVTIVZ/Twitter-Typescript',
-    live: 'https://nvtivz-twitter.netlify.app',
+    live: 'https://nvtivz-twitter-clone.netlify.app/',
   },
   {
     name: 'Mediation Time',
@@ -24,7 +24,7 @@ const projects = [
     imgURL: '/images/mediation.png',
     stack: ['NextJS', 'ChakraUI', 'NodeJS', 'ExpressJS', 'MongoDB'],
     github: 'https://github.com/NVTIVZ/Mediation-time',
-    live: 'https://mediation-time.netlify.app',
+    live: 'https://nvtivz-mediation.netlify.app/',
   },
   {
     name: 'TFT Builder',
