@@ -3,18 +3,18 @@ import React from 'react';
 
 const TechStack = () => {
   const techstack = [
-    'TypeScript',
-    'React',
-    'NextJS',
-    'Redux',
-    'HTML5',
-    'CSS3',
-    'Styled-Components',
-    'ChakraUI',
-    'NodeJS',
-    'Express',
-    'Firebase',
-    'MongoDB',
+    'typeScript',
+    'react',
+    'nextjs',
+    'redux',
+    'html5',
+    'css3',
+    'styled-components',
+    'chakraui',
+    'nodejs',
+    'express',
+    'firebase',
+    'mongodb',
   ];
   const renderStack = () => {
     return techstack.map((tech) => {

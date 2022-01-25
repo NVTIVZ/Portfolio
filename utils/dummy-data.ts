@@ -1,4 +1,4 @@
-const projects = [
+export const projects = [
   {
     name: 'Pokedex',
     description:
@@ -36,7 +36,3 @@ const projects = [
     live: 'false',
   },
 ];
-
-export const allProjects = () => {
-  return projects;
-};

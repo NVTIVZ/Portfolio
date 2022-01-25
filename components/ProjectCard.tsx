@@ -4,22 +4,21 @@ import { SlideFade } from '@chakra-ui/transition';
 import React, { useRef } from 'react';
 import NextImage from 'next/image';
 import { useInViewport } from 'react-in-viewport';
+import { useInView } from 'react-intersection-observer';
 
 const ProjectCard = (props: any) => {
-  const ref = useRef(null);
-  const { enterCount } = useInViewport(
-    ref,
-    { rootMargin: '-100px' },
-    { disconnectOnLeave: false },
-    {}
-  );
-
+  const { ref, inView, entry } = useInView({
+    /* Optional options */
+    threshold: 0,
+    rootMargin: '-100px 0px -100px 0px',
+    triggerOnce: true,
+  });
   return (
     <GridItem key={props.name} rowSpan={[2]} colSpan={1} ref={ref}>
       <SlideFade
         offsetX={props.index === 0 || props.index === 2 ? '20px' : '-20px'}
         offsetY={0}
-        in={enterCount > 0}
+        in={inView}
         unmountOnExit={true}
         style={{
           position: 'relative',
@@ -36,13 +35,14 @@ const ProjectCard = (props: any) => {
           my="6"
         >
           {' '}
-          <Box borderTopRadius="lg" overflow="hidden">
+          <Box borderTopRadius="lg" overflow="hidden" blur>
             <NextImage
               src={props.imgURL}
               alt="project"
               layout="responsive"
               width="929"
               height="505"
+              priority={true}
             />
           </Box>
           <Box ml="4" mt="1" d="flex" alignItems="center">

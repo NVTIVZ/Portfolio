@@ -1,29 +1,10 @@
 import { Grid, GridItem, Link } from '@chakra-ui/layout';
 import { Fade, Heading, Text } from '@chakra-ui/react';
 import React from 'react';
-import { allProjects } from '../utils/dummy-data';
+import { projects } from '../utils/dummy-data';
 import ProjectCard from './ProjectCard';
 
 const ProjectsArea = () => {
-  const projects = allProjects();
-
-  const renderProjects = () => {
-    return projects.map((project, index) => {
-      return (
-        <ProjectCard
-          name={project.name}
-          imgURL={project.imgURL}
-          stack={project.stack}
-          description={project.description}
-          github={project.github}
-          live={project.live}
-          key={project.name}
-          index={index}
-        />
-      );
-    });
-  };
-
   return (
     <Grid
       templateColumns={{ base: 'repeat(1,1fr)', md: 'repeat(2,1fr)' }}
@@ -48,7 +29,46 @@ const ProjectsArea = () => {
           </Link>
         </Text>
       </GridItem>
-      {renderProjects()}
+      <ProjectCard
+        name={projects[0].name}
+        imgURL={projects[0].imgURL}
+        stack={projects[0].stack}
+        description={projects[0].description}
+        github={projects[0].github}
+        live={projects[0].live}
+        key={projects[0].name}
+        index={0}
+      />
+      <ProjectCard
+        name={projects[1].name}
+        imgURL={projects[1].imgURL}
+        stack={projects[1].stack}
+        description={projects[1].description}
+        github={projects[1].github}
+        live={projects[1].live}
+        key={projects[1].name}
+        index={1}
+      />
+      <ProjectCard
+        name={projects[2].name}
+        imgURL={projects[2].imgURL}
+        stack={projects[2].stack}
+        description={projects[2].description}
+        github={projects[2].github}
+        live={projects[2].live}
+        key={projects[2].name}
+        index={2}
+      />
+      <ProjectCard
+        name={projects[3].name}
+        imgURL={projects[3].imgURL}
+        stack={projects[3].stack}
+        description={projects[3].description}
+        github={projects[3].github}
+        live={projects[3].live}
+        key={projects[3].name}
+        index={3}
+      />
     </Grid>
   );
 };
