@@ -13,16 +13,19 @@ const ProjectCard = (props: any) => {
     triggerOnce: true,
   });
   return (
-    <GridItem key={props.name} rowSpan={[2]} colSpan={1} ref={ref}>
+    <GridItem
+      key={props.name}
+      rowSpan={[2]}
+      colSpan={1}
+      ref={ref}
+      position={'relative'}
+    >
       <SlideFade
-        offsetX={props.index === 0 || props.index === 2 ? '20px' : '-20px'}
-        offsetY={0}
+        offsetX={props.right ? '30px' : '-30px'}
+        offsetY={'0px'}
         in={inView}
-        unmountOnExit={true}
-        style={{
-          position: 'relative',
-        }}
-        transition={{ enter: { duration: 0.5 } }}
+        transition={{ enter: { duration: 0.6 } }}
+        unmountOnExit={false}
       >
         <Flex
           flexDirection="column"
@@ -32,9 +35,10 @@ const ProjectCard = (props: any) => {
           ml={props.index === 0 || props.index === 2 ? [0, 0, 4] : '0'}
           mr={props.index === 0 || props.index === 2 ? '0' : [0, 0, 4]}
           my="6"
+          position={'relative'}
         >
           {' '}
-          <Box borderTopRadius="lg" overflow="hidden" blur>
+          <Box borderTopRadius="lg" overflow="hidden">
             <NextImage
               src={props.imgURL}
               alt="project"

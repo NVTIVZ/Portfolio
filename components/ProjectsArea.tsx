@@ -37,7 +37,7 @@ const ProjectsArea = () => {
         github={projects[0].github}
         live={projects[0].live}
         key={projects[0].name}
-        index={0}
+        right={true}
       />
       <ProjectCard
         name={projects[1].name}
@@ -47,7 +47,7 @@ const ProjectsArea = () => {
         github={projects[1].github}
         live={projects[1].live}
         key={projects[1].name}
-        index={1}
+        right={false}
       />
       <ProjectCard
         name={projects[2].name}
@@ -57,7 +57,7 @@ const ProjectsArea = () => {
         github={projects[2].github}
         live={projects[2].live}
         key={projects[2].name}
-        index={2}
+        right={true}
       />
       <ProjectCard
         name={projects[3].name}
@@ -67,7 +67,7 @@ const ProjectsArea = () => {
         github={projects[3].github}
         live={projects[3].live}
         key={projects[3].name}
-        index={3}
+        right={false}
       />
     </Grid>
   );
