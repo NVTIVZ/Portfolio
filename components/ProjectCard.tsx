@@ -1,9 +1,8 @@
 import { Box, Flex, GridItem, Link } from '@chakra-ui/layout';
 import { Heading, Image, Text } from '@chakra-ui/react';
 import { SlideFade } from '@chakra-ui/transition';
-import React, { useRef } from 'react';
 import NextImage from 'next/image';
-import { useInViewport } from 'react-in-viewport';
+import React from 'react';
 import { useInView } from 'react-intersection-observer';
 
 const ProjectCard = (props: any) => {

@@ -1,5 +1,5 @@
 import { Grid, GridItem, Link } from '@chakra-ui/layout';
-import { Fade, Heading, Text } from '@chakra-ui/react';
+import { Heading, Text } from '@chakra-ui/react';
 import React from 'react';
 import { projects } from '../utils/dummy-data';
 import ProjectCard from './ProjectCard';

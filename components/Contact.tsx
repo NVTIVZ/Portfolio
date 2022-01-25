@@ -11,24 +11,6 @@ import {
 import React from 'react';
 
 const Contact = () => {
-  // const templateId = process.env.NEXT_PUBLIC_TEMPLATE_ID;
-  // const userId = process.env.NEXT_PUBLIC_USER_ID;
-
-  // const [message, setMessage] = useState('');
-  // const sendEmail = (e: any) => {
-  //   e.preventDefault();
-
-  //   emailjs.sendForm('service_vwogkyk', templateId!, e.target, userId).then(
-  //     (result) => {
-  //       setMessage('Message sent');
-  //       e.target.reset();
-  //     },
-  //     (error) => {
-  //       setMessage(error.text);
-  //     }
-  //   );
-  // };
-
   return (
     <Box align="center" mt={[12, 24, 40]} mb={[24, 36, 72]} id="contact">
       <Heading fontSize="5xl"> Keep In Touch.</Heading>
